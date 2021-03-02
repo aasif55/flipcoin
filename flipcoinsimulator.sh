@@ -1,1 +1,11 @@
-#Welcome to the flipcoin simulator
+#!/bin/bash -x
+
+flipCoin=$((RANDOM%2))
+
+if [ $flipcoin -eq 1]
+then
+	echo HEAD
+else
+	echo TAIL
+fi
+
